@@ -1,0 +1,58 @@
+<html>
+<head>
+    
+    <title>New Tab</title>
+    <h1>Emirp number </h1>
+</head>
+<body>
+<script>
+    Emirp();
+    let num = Number(prompt('Enter the number'));
+    let dup = num;
+    function Emirp()
+    { 
+        function prime(num)
+        {
+            let count = 0;
+            for (let i = 2; i<=(Math.trunc((num)**(0.5)+1));i++);
+            {
+                if (num%i ==0)
+                {
+                    count += 1;
+                }
+                
+            }
+            if(count === 0)
+            {
+                return true;
+            } 
+            else
+            {
+                return false;
+            }
+        }
+        function Rev(num)
+        {
+            let sol = 0;
+            while (num!==0)
+            {
+                sol = (sol*10) +(num%10);
+                num = (Math.trunc(num/10));
+            }
+            return sol;
+        } 
+        let revnum = Rev(num);
+        if((dup!==revnum) && (prime(num)) && (prime(revnum)))
+        {
+            console.log(`${dup} is Emirp Number `)
+        }
+        else
+        {
+            console.log(`${dup} is  not an Emirp Number`)
+        }      
+        
+    }
+    
+</script>   
+</body>
+</html>

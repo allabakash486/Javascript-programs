@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <h1> Leap Year</h1>  
+</head>
+<body>
+    <script>
+        let number = Number(prompt("Enter the year"))
+        let month = Number(prompt("Enter the month in decimal"))
+        if( (number%4==0 && number%100 !== 0 ) || (number%400 === 0))
+        {
+            console.log(`${number} is a Leap Year`)
+            if (month%2 == 0)
+            {
+                if (month == 2)
+                {
+                    console.log("29 days")
+                }
+                else
+                {
+                    console.log("30")
+                }
+            }
+            else
+            {
+                console.log("31 days")
+            }
+        }
+        else
+        {
+            console.log(`${number} is not a leap year`)
+            if (month%2 == 0)
+            {
+                if (month == 2)
+                {
+                    console.log("28 days")
+                }
+                else
+                {
+                    console.log("30")
+                }
+            }
+            else
+            {
+                console.log("31 days")
+            }
+        }
+     </script>
+</body>
+</html>

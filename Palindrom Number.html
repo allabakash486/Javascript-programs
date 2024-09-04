@@ -1,0 +1,32 @@
+<html>
+<head>
+    
+    <title>New Tab</title>
+    <h1>Palindrome number </h1>
+</head>
+<body>
+<script>
+    Palindrome();
+    function Palindrome()
+    { 
+        let num  =Number(prompt("Enter the number:"));
+        let dup = num;
+        let sol = 0;
+        while (num!=0)
+        {
+            let last_dig = (num%10);
+            sol = (sol*10)+ last_dig
+            num = Math.trunc(num/10);
+        } 
+        if (sol === dup)
+        {
+            console.log(`${dup} is Palindrome number`);
+        } 
+        else
+        {
+            console.log(`${dup} is not  Palindrome number`);
+        } 
+    }
+</script>   
+</body>
+</html>

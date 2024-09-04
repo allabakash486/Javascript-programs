@@ -1,0 +1,33 @@
+<html>
+<head>
+    
+    <title>New Tab</title>
+    <h1>Armstrong Number </h1>
+</head>
+<body>
+<script>
+    Strong();
+    function Strong()
+    { 
+        let num  =Number(prompt("Enter the number:"));
+        let dup = num;
+        let length_of_num = Number(String(num).length) ;
+        let sol = 0
+        while (num!=0)
+        {
+            let last_dig = (num%10);
+            sol += (last_dig)**(length_of_num);
+            num = Math.trunc(num/10);
+        } 
+        if (sol === dup)
+        {
+            console.log(`${dup} is Armstrong number`);
+        } 
+        else
+        {
+            console.log(`${dup} is not  Armstrong number`);
+        } 
+    }
+</script>   
+</body>
+</html>

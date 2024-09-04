@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Tab</title>
+    <h1>Electricity bill based on the Units</h1>
+</head>
+<body>
+    <script>
+        Electricity();
+        function Electricity()
+        {
+            let units = Number(prompt("Enter the Number of Units :"));
+            if (units>=350)
+                if (units <=200)
+                {
+                    return consol.log("No need to pay single rupee to Government");
+                }
+                let dif1 = (units - 200);
+                let dif2 = (dif1-50);
+                let dif3 =(dif2-50);
+                if ((dif1>50)||(dfi<=50))
+                {
+                    if (dif1>50)
+                    {
+                        let Cost_per_unit = 3;
+                        let a = 50*Cost_per_unit;
+                        console.log(`${a}`);
+                    }
+                    else
+                    {
+                        let Cost_per_unit = 3;
+                        let a = dif1*Cost_per_unit;
+                        console.log(`${a}`)
+                    }
+                    
+                }
+                if((dif2<=50)||(dif2>50))
+                {
+                    if(dif2<=50)
+                    {
+                    let Cost_per_unit = 5;
+                    console.log("+")
+                    let b = dif2*Cost_per_unit;
+                    console.log(`${b}`);
+                    }
+                    else
+                    {
+                        let Cost_per_unit = 5;
+                    console.log("+")
+                    let b = 50*Cost_per_unit;
+                    console.log(`${b}`);  
+                    }
+
+                }
+                if(dif3>=50)
+                {
+                    let Cost_per_unit = 7;
+                    console.log("+")
+                    let c = dif3*Cost_per_unit;
+                    console.log(`${c}`);
+                }
+        }            
+        
+    </script>
+    
+</body>
+</html>

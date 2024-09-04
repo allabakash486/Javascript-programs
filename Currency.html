@@ -1,0 +1,55 @@
+ç<!DOCTYPE html>
+<html>
+<head><title>New Tab</title>
+    <h1> Currency conversion in notes</h1>
+</head>
+<body>
+    <script>
+        let Amount = Number(prompt("Enter the Currency Amount : "));
+        let dup = Amount
+        let A_2 = 2000;
+        let A_5 = 500;
+        let A_a = 200;
+        let A_1 = 100;
+        Currency(Amount,dup,A_2,A_5,A_a,A_1);
+        function Currency(Amount,dup,A_2,A_5,A_a,A_1)
+        {
+            
+            let Notes_2000 = (Math.trunc(Amount/A_2));
+                Amount -= (2000*Notes_2000)
+            let Notes_500  = (Math.trunc(Amount/A_5));
+                Amount -= (500*Notes_500);
+            let Notes_200 = (Math.trunc(Amount/A_a));
+                Amount -= (500*Notes_200);
+            let Notes_100 = (Math.trunc(Amount/A_1));
+            Amount -= (500*Notes_100);
+            console.log(`Total Amount is  ${dup}`);
+            console.log("---------------------------");
+            if (A_2*Notes_2000>0)
+            {
+                console.log(`${A_2}*${Notes_2000}= ${A_2*Notes_2000}`);
+                
+            }
+            if (A_5*Notes_500>0)
+            {
+                console.log("+");
+                console.log(`${A_5}*${Notes_500}= ${A_5*Notes_500}`);
+            }
+            if (A_a*Notes_200>0)
+            {
+                console.log("+");
+                console.log(`${A_a}*${Notes_200}= ${A_a*Notes_200}`);
+                
+            }
+            if (A_1 * Notes_100>0)
+            {
+                console.log("+");
+                console.log(`${A_1}* ${Notes_100}= ${A_1 * Notes_100}`);
+            }
+            console.log("=")
+            console.log(`Total Amount is  ${dup}`);
+        }
+    </script>
+    
+</body>
+</html>

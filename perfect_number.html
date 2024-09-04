@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>New Perfect Number</title>
+    <h1>Perfect Number</h1>
+</head>
+<body>
+    <script>
+        Perfect_num();
+        function Perfect_num()
+        {
+            let a =Number(prompt("Enter number"));
+            let sum = 0;
+            for (let i = 0; (i<=(Math.trunc(a/2))); i++)
+            {
+                if (a%i == 0)
+                {
+                    sum += i;
+                }
+            }
+            if (sum == a)
+            {
+                console.log(`${a} is perfect number`);
+            }
+            else
+            {
+                console.log(`${a} is not a perfect number`)
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

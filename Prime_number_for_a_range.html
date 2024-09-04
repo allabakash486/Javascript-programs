@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1
+        {
+            background-color: aqua;
+            margin:0px;
+            color: black;
+            padding: 10px 20px;
+        }
+    </style>
+       <title>Prime Number</title>
+</head>
+<body>
+    <h1 align="Center">Prime Number for a given range</h1>
+    <script>
+        Prime()
+        function Prime()
+        {
+            let Statrting_num = Number(prompt("Enter the statring value :"));
+            let Ending_num = Number(prompt("Enter the ending value:"));
+            for(i=Statrting_num; i<=Ending_num; ++i)
+            {
+                let count = 0
+                for(a=2;(a<=Math.trunc(i/2)); ++a)
+                {
+                if (i%a==0)
+                {
+                    count +=1
+                    break
+                }
+                }
+                if(count===0)
+                console.log(i)
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

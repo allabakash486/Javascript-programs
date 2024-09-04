@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>New Tab</title>
+    <h1>Strong Number Or Special number </h1>
+</head>
+<body>
+    <script>
+        Strong();
+        function Strong()
+        {
+            let num = Number(prompt("Enter the number "));
+            let Dup = num;
+            let sum =0;
+            function Strong()
+            {
+                "use strict";
+                while (num !=0)
+                {
+                    let ld = (num%10);
+                    let Fact = 1;
+                    for (let i = 1;i<=ld;i++)
+                    {
+                       Fact *= i; 
+                    }
+                    sum += Fact;
+                    num = Math.trunc(num/10)
+                }
+                
+            }
+            Strong();
+            if(sum === Dup)
+            {
+                console.log(`${Dup} is Strong number`)
+            }
+            else
+            {
+                console.log(`${Dup} is  not a Strong number`) 
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

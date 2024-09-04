@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1
+        {
+            color: blue;
+            background-color: aqua;
+            border:0px 0px 0px opx;
+            padding: 0px;
+        }
+    </style>
+    
+    <title>Disarm Number</title>
+</head>
+<body>
+    <h1 align="Center">Disarm Number </h1>
+    <script>
+        Disarm();
+        function Disarm()
+        {
+            let num = Number(prompt("Enter the number:"));
+            let dup = num;
+            let len = Number(String(num).length);
+            let sol = 0;
+            while (num!==0)
+            {
+                sol += (num%10)**(len);
+                num = (Math.trunc(num/10)) 
+                len -= 1;
+            }
+            if (sol === dup)
+            {
+                console.log(`${dup} is Disarm number`)
+            }
+            else
+            {
+                console.log(`${dup} is  not an Disarm number`)
+            }
+        }
+    </script>
+    
+</body>
+</html>
